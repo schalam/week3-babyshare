@@ -2,10 +2,11 @@
 <html lang = "en">
     <head>
         <title>Babyshare</title>
+        <link rel="stylesheet" href = "style.css">
     </head>
     <body>
         <h1>Babyshare</h1>
-        <p>Drop off your old baby clothes and grab new ones</p>
+        <p class = "subtitle">Drop off your old baby clothes and grab new ones</p>
         <h2>Available Items</h2>
         <ul>
             <li>Gear</li>
@@ -15,21 +16,25 @@
             <li>Feeding</li>
             <li>Safety</li>
         </ul>
-        <div class="item-container">
-        <div class="item-card">
+        <div class="items-container">
+        <div class="card">
+            <span class = "badge category-tag">Gear</span>
             <h3>Uppababy Vista Stroller</h3>
             <p>Category: Gear</p>
             <p>Age Range: 0–36 months</p>
             <p>Status: Available</p>
             <p>Owner: Sunny</p>
+            <span class = "badge badge-available">Available</span> <br><br>
             <button>Request this item</button>
           </div>
-          <div class="item-card">
+          <div class="card">
+            <span class = "badge category-tag">Safety</span>
             <h3>Nuna Car Seat</h3>
             <p>Category: Gear</p>
             <p>Age Range: 0–12 months</p>
             <p>Status: Available</p>
             <p>Owner: Priya</p>
+            <span class="badge badge-lent">Lent</span> <br>
             <button>Request this item</button>
           </div>
           </div>
@@ -41,10 +46,9 @@
         <h2>This is a stroller</h2>
         <img src="https://placehold.co/200x150?text=Stroller" alt="A stroller">
         <h2>Add a new item</h2>
-        <form>
+    <div class = "form-section">
         <label for="item-name">Type</label>
-        <input type="text" id="item-name" placeholder="e.g. Stroller"><br><br>
-
+        <input type="text" id="item-name" placeholder="e.g. Stroller">
         <label for="Category">Category</label>
         <select id ="Category">
             <option value="gear">Gear</option>
@@ -53,22 +57,18 @@
             <option value="books">Books</option>
             <option value="feeding">Feeding</option>
             <option value="safety">Safety</option>
-        </select><br><br>
-
-        <label for="age-range">Age Range</label><br>
-        <input type="text" id="age-range" placeholder="e.g. 0-36 months"><br><br>
-
+        </select><br>
+        <label for="age-range">Age Range</label>
+        <input type="text" id="age-range" placeholder="e.g. 0-36 months">
         <label for="status">Current Status</label>
         <select id ="status">
             <option value="gear">Available</option>
             <option value="clothing">Lent</option>
-        </select><br><br>
-
+        </select><br>
         <label for="owner">Owner</label>
-        <input type="owner" id="item-name" placeholder="e.g. Sunny"><br><br>
-
-
-    </form>
-
+        <input type="text" id="owner" placeholder="e.g. Sunny">
+        <button type = "submit" class = "submit-btn">Add Item</button>
+    </div> <br><br><br>
+<footer>This is Babyshare, copyright Chalavasans, don't steal this</footer>
     </body>
 </html>
